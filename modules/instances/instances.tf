@@ -10,9 +10,9 @@ terraform {
 }
 
 provider "google" {
-  project = "studidevops-batch-12"
-  region  = "asia-southeast2"
-  zone    = "asia-southeast2-a"
+  project = var.project
+  region  = var.region
+  zone    = var.zone
   #   credentials = "./credential-tf-batch-13.json"
 }
 

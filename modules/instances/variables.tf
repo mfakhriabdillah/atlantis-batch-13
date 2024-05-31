@@ -26,15 +26,23 @@ variable "vm_network_tags" {
 
 variable "vm_images" {
   type    = string
-  default = "ubuntu-os-cloud/ubuntu-2004-lts"
 }
 
 variable "ssh_keys" {
   type    = string
-  default = "<USER>:<YOUR_SSH_PUBLIC_KEY>"
 }
 
 variable "vm_network" {
   type    = string
-  default = "default"
 }
+
+variable project {
+  type        = string
+}
+variable region {
+  type        = string
+}
+variable zone {
+  type        = string
+}
+
